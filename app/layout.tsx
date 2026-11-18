@@ -3,6 +3,7 @@ import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import FloatingChatWidget from '@/components/FloatingChatWidget';
 import { LanguageProvider } from '@/context/LanguageContext';
 
 const inter = Inter({
@@ -50,6 +51,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
             {children}
           </main>
           <Footer />
+          <FloatingChatWidget />
         </LanguageProvider>
       </body>
     </html>
